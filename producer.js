@@ -19,7 +19,7 @@ var producer = new HighLevelProducer(client);
 
 producer.on('ready', function() {
   // Create message
-  fs.readFile("mychannel.tx", function(err, data) {
+  fs.readFile("test.txt", function(err, data) {
       console.log('data is ',data)
       var messageBuffer = data
  

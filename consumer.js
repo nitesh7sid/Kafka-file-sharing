@@ -24,7 +24,7 @@ consumer.on('message', function(message) {
  // var decodedMessage = type.fromBuffer(buf.slice(0)); // Skip prefix.
   console.log(buf);
 
-    fs.writeFile("test.tx", buf,function(err) {
+    fs.writeFile("test.txt", buf,function(err) {
       console.log('data written ')
    });  
 
